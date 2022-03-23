@@ -56,7 +56,14 @@ select {
   font-family: "Roboto", sans-serif;
 }
 
+* body {
+  background-color: var(--primary);
+}
+
 * body header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,6 +77,8 @@ select {
   height: 80px;
   background-color: var(--secondary);
   padding: 10px;
+  -webkit-box-shadow: 0 5px 5px -5px var(--primary);
+          box-shadow: 0 5px 5px -5px var(--primary);
 }
 
 * body header .account_balance {
@@ -91,6 +100,7 @@ select {
 }
 
 * body section {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,9 +109,10 @@ select {
   max-width: 1200px;
   gap: 60px;
   background-color: var(--primary);
-  padding-top: 30px;
+  padding-top: 110px;
   padding-left: 60px;
   padding-right: 60px;
+  padding-bottom: 110px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -135,6 +146,8 @@ select {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
 
 * body section article .sub {
@@ -154,9 +167,11 @@ select {
   font-weight: 400;
   background-color: var(--primary);
   color: var(--secondary);
+  margin-bottom: 10px;
 }
 
 * body section article .text {
+  font-weight: bold;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -165,6 +180,14 @@ select {
 }
 
 * body section article button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: absolute;
   bottom: -25px;
   width: 160px;
@@ -177,7 +200,13 @@ select {
   background-color: var(--secondary);
 }
 
-* body section article button span {
+* body section article button .arrow_forward {
   font-size: 36px;
+  color: var(--primary);
+}
+
+* body section article button button:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 /*# sourceMappingURL=style.css.map */

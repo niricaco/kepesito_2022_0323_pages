@@ -60,7 +60,7 @@ const cards = (data, i) => {
             ${data.text}</p>
           <button class="more">
             Save
-            <span class="material-icons-outlined"> arrow_forward </span>
+            <span class="material-icons-outlined arrow_forward"> arrow_forward </span>
           </button>
         </article>
   `;
