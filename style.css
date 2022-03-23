@@ -55,4 +55,129 @@ select {
 * {
   font-family: "Roboto", sans-serif;
 }
+
+* body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: var(--secondary);
+  padding: 10px;
+}
+
+* body header .account_balance {
+  color: var(--primary);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+* body header button {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary);
+  border-radius: 100%;
+}
+
+* body header button .menu {
+  color: var(--secondary);
+  font-size: 36px;
+}
+
+* body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 60px;
+  background-color: var(--primary);
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body section article {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 40px;
+  max-width: 250px;
+  -webkit-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+  background-color: var(--secondary);
+}
+
+* body section article .title {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--primary);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+* body section article .sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  width: 160px;
+  height: 160px;
+  font-size: 80px;
+  font-weight: 400;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+* body section article .text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 18px;
+  color: var(--primary);
+}
+
+* body section article button {
+  position: absolute;
+  bottom: -25px;
+  width: 160px;
+  height: 50px;
+  font-size: 14px;
+  -webkit-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  border: 1px solid var(--primary);
+  background-color: var(--secondary);
+}
+
+* body section article button span {
+  font-size: 36px;
+}
 /*# sourceMappingURL=style.css.map */
